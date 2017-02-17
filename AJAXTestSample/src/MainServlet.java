@@ -93,10 +93,10 @@ public class MainServlet extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 
 		pw.println("<html><head><title>나의 첫번째 페이지</title></head>");
-		pw.println("<body>");           
+		pw.println("<body>");
 		pw.println("<font size='5pt'>");
 		//아래와같이 한글을 입력하면 클라이언트의 웹브라우져에서 글자가
-		//깨져서 나온다.            
+		//깨져서 나온다.
 		pw.println("제곱값 : " + rsltNum);
 		pw.println("</font>");
 		pw.println("</body>");
