@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>OJT 로그인 페이지</title>
+	
+	<script src="/OJTProject/js/common/common.js?version=0.1"></script>
+	<script src="/OJTProject/js/login/login.js?version=0.3"></script>
+	<script src="/OJTProject/js/common/json2.js?version=1.0"></script>
+</head>
+
+<body>
+
+	<div>
+		<span>MEMBER LOGIN</span><br>
+		<!-- onsubmit과 action이 sysnc가 안 맞아서 곤란.. -->
+		<!-- action 속성이 페이지 호출을 하기 때문에 곤란.. -->
+		<!-- <form name="loginForm" method="post" onsubmit="return requestLogin();" action="/OJTProject/main.html" style="margin-left: 20px;"> -->
+		<form name="loginForm" method="post" action="/OJTProject/main.html" style="margin-left: 20px;">
+			<span>회사선택&nbsp;&nbsp;
+			<select name="affiliateList" data-placeholder="선택">
+				<option>선택</option>
+			</select>
+			</span><br>
+			<span>아이디&nbsp;&nbsp;<input id="id" type="text"></span><br>
+			<span>패스워드&nbsp;&nbsp;<input id="password" type="password"></span><br>
+			<!-- <input type="submit" value="로그인" style="margin-left: -20px;"> -->
+		</form>
+		<input id="loginBtn" type="button" value="로그인">
+	</div>
+
+</body>
+
+</html>
