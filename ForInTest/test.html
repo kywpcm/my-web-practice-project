@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Web Test~!</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            /****** 배열 ******/
+            var ary = new Array();
+            ary = [1, 3, 'kywpcm', true, '아~'];
+
+            for (var qweasd in ary) {
+                console.log(qweasd + ' : ' + ary[qweasd]);
+            }
+
+            /****** 객체 ******/
+            var obj = {
+                id: 'myid',
+                name: 'myname',
+                pw : '123!@#!413'
+            }
+
+            for (var i in obj) { // attr
+                console.log(i); // attr
+            }
+
+        }
+    </script>
+</body>
+
+</html>
