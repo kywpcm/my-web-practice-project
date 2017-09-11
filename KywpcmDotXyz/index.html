@@ -30,9 +30,40 @@
     <!-- Custom styles for this template -->
     <link href="./assets/css/carousel.css" rel="stylesheet">
     <link href="./assets/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- page 전용 css -->
+    <style type="text/css">
+    /*.navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }*/
+
+    /*@media (min-width: 768px)*/
+    .navbar-default {
+        padding: 45px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    @media (min-width: 768px)
+    .navbar-default.navbar-shrink { /* .A.B => A와 B가 모두 있는 요소 */
+        padding: 10px 0;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /*@media (min-width: 768px)*/
+    .navbar-default.navbar-shrink .navbar-brand, .navbar-default.navbar-static .navbar-brand {
+        font-size: 1.5em;
+        color: #fff;
+    }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -241,6 +272,10 @@
 
     <!-- scrollspy -->
     <script src="./assets/js/scrollspy.js"></script>
+    <!-- class add -->
+    <script src="./assets/js/classie.js"></script>
+    <!-- header animation -->
+    <script src="./assets/js/cbp-animated-header.js"></script>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg></body>
 
