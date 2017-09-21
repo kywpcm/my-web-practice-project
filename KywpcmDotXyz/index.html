@@ -33,99 +33,122 @@
 
     <!-- page 전용 css -->
     <style type="text/css">
-    .navbar-default {
-        /*padding: 45px 0;*/
-        border: 0;
-        background-color: rgba(0,0,0,0.8);
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-    .navbar-default .navbar-brand {
-        /*font-size: 4em;*/
-        -webkit-transition: all .3s;
-        -moz-transition: all .3;
-        transition: all .3s;
-        font-family: Consolas, monaco, monospace;
-        color: #fff;
-        font-weight: bold;
-    }
-    @media (min-width: 768px) {
         .navbar-default {
-            padding: 45px 0;
+            /*padding: 45px 0;*/
             border: 0;
-            background-color: transparent;
+            background-color: rgba(0, 0, 0, 0.8);
             -webkit-transition: padding .3s;
             -moz-transition: padding .3s;
             transition: padding .3s;
         }
-        /*@media (min-width: 768px)*/
+
         .navbar-default .navbar-brand {
-            font-size: 4em;
+            /*font-size: 4em;*/
             -webkit-transition: all .3s;
             -moz-transition: all .3;
             transition: all .3s;
-            /*font-family: 'Raleway', sans-serif;*/
             font-family: Consolas, monaco, monospace;
-            color: #fff;
-        }
-
-        /*@media (min-width: 768px)*/
-        .navbar-default.navbar-shrink { /* .A.B => A와 B가 모두 있는 요소 */
-            padding: 10px 0;
-            background-color: rgba(0,0,0,0.8);
-        }
-        /*@media (min-width: 768px)*/
-        .navbar-default.navbar-shrink .navbar-brand {
-            font-size: 1.5em;
             color: #fff;
             font-weight: bold;
         }
-        .navbar-default.navbar-shrink .nav li>a {
-            font-size: 1.4em;
+
+        @media (min-width: 768px) {
+            .navbar-default {
+                padding: 45px 0;
+                border: 0;
+                background-color: transparent;
+                -webkit-transition: padding .3s;
+                -moz-transition: padding .3s;
+                transition: padding .3s;
+            }
+            /*@media (min-width: 768px)*/
+            .navbar-default .navbar-brand {
+                font-size: 4em;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3;
+                transition: all .3s;
+                /*font-family: 'Raleway', sans-serif;*/
+                font-family: Consolas, monaco, monospace;
+                color: #fff;
+            }
+
+            /*@media (min-width: 768px)*/
+            .navbar-default.navbar-shrink {
+                /* .A.B => A와 B가 모두 있는 요소 */
+                padding: 10px 0;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            /*@media (min-width: 768px)*/
+            .navbar-default.navbar-shrink .navbar-brand {
+                font-size: 1.5em;
+                color: #fff;
+                font-weight: bold;
+            }
+            .navbar-default.navbar-shrink .nav li>a {
+                font-size: 1.4em;
+            }
+
+            .navbar-default.navbar-shrink .dropdown-menu>li>a {
+                font-size: 15px !important;
+            }
         }
 
-        .navbar-default.navbar-shrink .dropdown-menu>li>a {
-            font-size: 15px !important;
+        .navbar-default .navbar-nav>.active a {
+            border-radius: 0;
+            color: #6f9ef2;
+            background-color: transparent;
         }
-    }
 
-    .navbar-default .navbar-nav>.active a {
-        border-radius: 0;
-        color: #6f9ef2;
-        background-color: transparent;
-    }
-    .navbar-default .nav li>a {
-        /*font-family: 'Raleway', sans-serif;*/
-        font-family: Consolas, monaco, monospace;
-        /*letter-spacing: 1px;*/
-        color: #fff;
-        /*font-weight: 100;*/
-        font-size: 21px;
-    }
-    .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-        color: #6f9ef2;
-        background-color: transparent;
-    }
-    a:hover, a:focus {
-        color: #6f9ef2 !important;
-    }
+        .navbar-default .nav li>a {
+            /*font-family: 'Raleway', sans-serif;*/
+            font-family: Consolas, monaco, monospace;
+            /*letter-spacing: 1px;*/
+            color: #fff;
+            /*font-weight: 100;*/
+            font-size: 21px;
+        }
 
-    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-        color: #6f9ef2;
-        background-color: transparent;
-    }
-    .dropdown-menu {
-        top: 118%;
-        background-color: rgba(0,0,0,0.8);
-    }
-    .navbar-default .dropdown-menu>li>a {
-        font-size: 17px !important;
-    }
-    .dropdown-menu>li>a:hover {
-        text-decoration: none;
-        background-color: transparent;
-    }
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            color: #6f9ef2;
+            background-color: transparent;
+        }
+
+        a:hover,
+        a:focus {
+            color: #6f9ef2 !important;
+        }
+
+        .navbar-default .navbar-nav>.open>a,
+        .navbar-default .navbar-nav>.open>a:focus,
+        .navbar-default .navbar-nav>.open>a:hover {
+            color: #6f9ef2;
+            background-color: transparent;
+        }
+
+        .dropdown-menu {
+            top: 118%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-default .dropdown-menu>li>a {
+            font-size: 17px !important;
+        }
+
+        .dropdown-menu>li>a:hover {
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-toggle:focus {
+            border-color: #6f9ef2;
+            background-color: #6f9ef2;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
     </style>
 </head>
 
@@ -134,21 +157,21 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Max Kwon</a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#home">Max Kwon</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a class="page-scroll" href="#home">Home</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#experience">Experience</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -339,10 +362,14 @@
 
     <!-- scrollspy -->
     <script src="./assets/js/scrollspy.js"></script>
-    <!-- class add -->
-    <script src="./assets/js/classie.js"></script>
     <!-- header animation -->
     <script src="./assets/js/cbp-animated-header.js"></script>
+    <!-- class add -->
+    <script src="./assets/js/classie.js"></script>
+    <!-- smoothly-scrolling -->
+    <script src="./assets/js/smoothly-scrolling.js"></script>
+    <!-- jQuery Easing plugin -->
+    <script src="./assets/plugins/jquery.easing.min.js"></script>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg></body>
 
