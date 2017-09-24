@@ -1,0 +1,197 @@
+.navbar-default {
+    /*padding: 45px 0;*/
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-default .navbar-brand {
+    /*font-size: 4em;*/
+    -webkit-transition: all .3s;
+    -moz-transition: all .3;
+    transition: all .3s;
+    font-family: Consolas, monaco, monospace;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        padding: 45px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 4em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3;
+        transition: all .3s;
+        /*font-family: 'Raleway', sans-serif;*/
+        font-family: Consolas, monaco, monospace;
+        color: #fff;
+    }
+
+    .navbar-default.navbar-shrink {
+        /* .A.B => A와 B가 모두 있는 요소 */
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: bold;
+    }
+    .navbar-default.navbar-shrink .nav li>a {
+        font-size: 1.4em;
+    }
+
+    .navbar-default.navbar-shrink .dropdown-menu>li>a {
+        font-size: 15px !important;
+    }
+}
+
+.navbar-default .navbar-nav>.active a {
+    border-radius: 0;
+    color: #6f9ef2;
+    background-color: transparent;
+}
+
+.navbar-default .nav li>a {
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: Consolas, monaco, monospace;
+    /*letter-spacing: 1px;*/
+    color: #fff;
+    /*font-weight: 100;*/
+    font-size: 21px;
+}
+
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #6f9ef2;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #6f9ef2 !important;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #6f9ef2;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    top: 118%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-default .dropdown-menu>li>a {
+    font-size: 17px !important;
+}
+
+.dropdown-menu>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-toggle:focus {
+    border-color: #6f9ef2;
+    background-color: #6f9ef2;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+/*section 관련*/
+/*============================================*/
+
+section {
+    padding: 80px 0;
+}
+
+/*.tb-page-container {
+    padding: 100px 0;
+}*/
+.tb-portfolio-container {
+    background-color: #f1f1f1;
+}
+.tb-header-container {
+    padding: 0 0 50px 0;
+}
+
+/*범용 라인 구분선*/
+.tb-underline-dark {
+    width: 15%;
+    height: 1px;
+    background: #333333;
+    display: inline-block;
+}
+
+.tb-header-container .h2_title {
+    font-weight: lighter;
+    font-size: 54px;
+}
+.tb-header-container h3 {
+    font-weight: lighter;
+    font-size: 22px;
+}
+.h2_mid_title {
+    font-weight: normal;
+}
+/*============================================*/
+
+/*font-awsome 관련*/
+.tb-social-icons {
+    padding-top: 20px;
+}
+.tb-social-icons a {
+    color: #333333;
+    font-size: 46px;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    /*text-transform: uppercase;*/
+    font-size: 18px;
+    color: #aaa;
+}
+
+.footer_img {
+    padding-left: 8px;
+}
+
+.list-inline li {
+    padding: 0 15px;
+}
+
+
+/*포트폴리오 섹션 관련*/
+.thumbnail {
+    padding: 0;
+    margin: 20px 0 0 0;
+    border: 0px solid #ddd;
+    border-bottom: 1px solid #d9d9d9;
+}
+.tb-image-container {
+    /*padding-top: 30px;*/
+}
+.tb-img-responsive {
+    border-radius: 4px 4px 0 0;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.thumbnail .caption {
+    padding: 30px;
+}

@@ -23,9 +23,7 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     // 2017.09.16 modify (KWONYW)
-    console.debug("테스트!@@#!#");
-    console.debug($(this).attr('class'));
-    if ($(this).attr('class') !== '.dropdown-toggle') {
+    if ($(this).attr('class') !== 'dropdown-toggle') {
         $('.navbar-toggle:visible').click();
     }
     // $('.navbar-toggle:visible').click();

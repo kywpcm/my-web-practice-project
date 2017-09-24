@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://bootstrapk.com/examples/carousel/ -->
+
 <html lang="en">
 
 <head>
@@ -8,18 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Hello world~! I'm Max Kwon.">
+    <meta name="author" content="Max Kwon">
     <link rel="icon" href="http://bootstrapk.com/favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Hello world~! I'm Max Kwon.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,126 +26,13 @@
     <!-- Custom styles for this template -->
     <link href="./assets/css/carousel.css" rel="stylesheet">
     <link href="./assets/css/sticky-footer-navbar.css" rel="stylesheet">
-
-    <!-- page 전용 css -->
-    <style type="text/css">
-        .navbar-default {
-            /*padding: 45px 0;*/
-            border: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            -webkit-transition: padding .3s;
-            -moz-transition: padding .3s;
-            transition: padding .3s;
-        }
-
-        .navbar-default .navbar-brand {
-            /*font-size: 4em;*/
-            -webkit-transition: all .3s;
-            -moz-transition: all .3;
-            transition: all .3s;
-            font-family: Consolas, monaco, monospace;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        @media (min-width: 768px) {
-            .navbar-default {
-                padding: 45px 0;
-                border: 0;
-                background-color: transparent;
-                -webkit-transition: padding .3s;
-                -moz-transition: padding .3s;
-                transition: padding .3s;
-            }
-            /*@media (min-width: 768px)*/
-            .navbar-default .navbar-brand {
-                font-size: 4em;
-                -webkit-transition: all .3s;
-                -moz-transition: all .3;
-                transition: all .3s;
-                /*font-family: 'Raleway', sans-serif;*/
-                font-family: Consolas, monaco, monospace;
-                color: #fff;
-            }
-
-            /*@media (min-width: 768px)*/
-            .navbar-default.navbar-shrink {
-                /* .A.B => A와 B가 모두 있는 요소 */
-                padding: 10px 0;
-                background-color: rgba(0, 0, 0, 0.8);
-            }
-            /*@media (min-width: 768px)*/
-            .navbar-default.navbar-shrink .navbar-brand {
-                font-size: 1.5em;
-                color: #fff;
-                font-weight: bold;
-            }
-            .navbar-default.navbar-shrink .nav li>a {
-                font-size: 1.4em;
-            }
-
-            .navbar-default.navbar-shrink .dropdown-menu>li>a {
-                font-size: 15px !important;
-            }
-        }
-
-        .navbar-default .navbar-nav>.active a {
-            border-radius: 0;
-            color: #6f9ef2;
-            background-color: transparent;
-        }
-
-        .navbar-default .nav li>a {
-            /*font-family: 'Raleway', sans-serif;*/
-            font-family: Consolas, monaco, monospace;
-            /*letter-spacing: 1px;*/
-            color: #fff;
-            /*font-weight: 100;*/
-            font-size: 21px;
-        }
-
-        .navbar-default .navbar-nav>.active>a:focus,
-        .navbar-default .navbar-nav>.active>a:hover {
-            color: #6f9ef2;
-            background-color: transparent;
-        }
-
-        a:hover,
-        a:focus {
-            color: #6f9ef2 !important;
-        }
-
-        .navbar-default .navbar-nav>.open>a,
-        .navbar-default .navbar-nav>.open>a:focus,
-        .navbar-default .navbar-nav>.open>a:hover {
-            color: #6f9ef2;
-            background-color: transparent;
-        }
-
-        .dropdown-menu {
-            top: 118%;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .navbar-default .dropdown-menu>li>a {
-            font-size: 17px !important;
-        }
-
-        .dropdown-menu>li>a:hover {
-            text-decoration: none;
-            background-color: transparent;
-        }
-
-        .navbar-default .navbar-toggle:hover,
-        .navbar-toggle:focus {
-            border-color: #6f9ef2;
-            background-color: #6f9ef2;
-        }
-
-        .navbar-default .navbar-toggle .icon-bar {
-            background-color: #fff;
-        }
-    </style>
+    <!-- page 전용 templatebaker css -->
+    <link href="./assets/css/my_templatebaker.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <!-- <link href="./assets/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- CDN.. -->
+    <!-- magnific -->
+    <link href="./assets/plugins/magnific/magnific-popup.css" rel="stylesheet">
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar">
@@ -170,7 +53,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a class="page-scroll" href="#home">Home</a></li>
                     <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#experience">Experience</a></li>
+                    <li><a class="page-scroll" href="#projects">Projects</a></li>
                     <li><a class="page-scroll" href="#contact">Contact</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -186,70 +69,52 @@
                     </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
 
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1" class=""></li>
             <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="3" class=""></li> -->
         </ol>
         <div class="carousel-inner" role="listbox" position="reletive">
             <div class="item active">
-                <!-- src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" -->
-                <!-- <div style="width: 500px; height: 300px"></div>
-                <div style="height: 40px; border: 1px solid green">mybox</div> -->
-                <img class="first-slide" src="./img/IMG_3641.jpg" alt="First slide">
-                <!-- <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" href="http://bootstrapk.com/examples/carousel/#" role="button">Sign up today</a></p>
-                    </div>
-                </div> -->
+                <img class="first-slide" src="./img/img_me_01.jpg" alt="First slide">
             </div>
             <div class="item">
-                <img class="second-slide" src="./img/IMG_5566.JPG" alt="Second slide">
-                <!-- <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="http://bootstrapk.com/examples/carousel/#" role="button">Learn more</a></p>
-                    </div>
-                </div> -->
+                <img class="second-slide" src="./img/img_me_02.jpg" alt="Second slide">
             </div>
             <div class="item">
-                <img class="third-slide" src="./img/SV100408.JPG" alt="Third slide">
-                <!-- <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="http://bootstrapk.com/examples/carousel/#" role="button">Browse gallery</a></p>
-                    </div>
-                </div> -->
+                <img class="third-slide" src="./img/img_me_03.jpeg" alt="Third slide">
             </div>
-            <div class="container" position="absolute">
+            <!-- <div class="item">
+                <img class="third-slide" src="./img/img_me_04.jpeg" alt="Fourth slide">
+            </div> -->
+            <div class="container"><!-- position="absolute" -->
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="http://bootstrapk.com/examples/carousel/#" role="button">Sign up today</a></p>
+                    <h1>Hello world~! I'm Max Kwon :D</h1>
+                    <p>I'm a fun guy who loves human and technology.<br>
+                    I'm a java programmer for web and android application.<br>
+                    Also I wanna be a real full-stack developer !</p>
+                    <!-- <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
+                    <p><a class="btn btn-lg btn-primary page-scroll" href="#contact" role="button">Contact me</a></p>
                 </div>
             </div>
         </div>
         <a class="left carousel-control" href="http://bootstrapk.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
         <a class="right carousel-control" href="http://bootstrapk.com/examples/carousel/#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
     <!-- /.carousel -->
 
@@ -258,27 +123,34 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div id="about" class="row">
+    <!-- Three columns of text below the carousel -->
+    <!-- About Section -->
+    <section id="about" class="row">
+        <div class="container marketing">
+            <div class="col-lg-12 text-center tb-header-container">
+                <h2 class="h2_title">About Me</h2>
+                <span class="tb-underline-dark"> </span>
+                <h3>It's not over until I win</h3>
+                <p>One of my favorite sentences from a motivational video, <a target="_blank" href="https://www.youtube.com/watch?v=g-jwWYX7Jlo"><cite>Dream</cite></a>
+                </p>
+            </div>
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
+                <h2 class="h2_mid_title">Heading</h2>
                 <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 <p><a class="btn btn-default" href="http://bootstrapk.com/examples/carousel/#" role="button">View details »</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
+                <h2 class="h2_mid_title">Heading</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <p><a class="btn btn-default" href="http://bootstrapk.com/examples/carousel/#" role="button">View details »</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
+                <h2 class="h2_mid_title">Heading</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
                     risus.
                 </p>
@@ -286,68 +158,215 @@
             </div>
             <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
+        <!-- /.container -->
+    </section>
+    <!-- /.row -->
 
 
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div id="experience" class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <!-- Portfolio Section -->
+    <section id="projects" class="tb-portfolio-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center tb-header-container">
+                    <h2 class="h2_title">Projects</h2>
+                    <span class="tb-underline-dark"> </span>
+                    <h3>These are successfully created applications. Also I have experiences in frontend, backend and Android applications.</h3>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
-                    data-holder-rendered="true">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="thumbnail clearfix">
+                        <div class="tb-image-container">
+                            <a id="mis" href="./img/projects/mis/img_mis_01.png">
+                               <img class="tb-img-responsive" src="./img/projects/mis/img_mis_01.png" alt="mis">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Van Optics ©</h4>
+                            <p>
+                            2016 1Q<br>
+                            Vanoptics is a Australia-based optical company. This is a order system for shops. <br>
+                            Developed all the systems including admin system.<br>
+                            Backend : Java, Spring, Spring Security, JPA(Hibernate), (DB) MariaDB 10.x, CentOS(running on AWS)<br>
+                            Frontend : Bootstrap, JQuery
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="thumbnail clearfix">
+                        <div class="tb-image-container">
+                            <a id="aig" href="./img/projects/aig/img_aig_01.png">
+                               <img class="tb-img-responsive" src="./img/projects/aig/img_aig_01.png" alt="aig">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Booknlife ©</h4>
+                            <p>
+                            2015 2Q ~ 4Q<br>
+    						Booknlife is a company that makes and distributes online gift certificates. <br>
+    						With this mobile application(Android / IOS), a user can buy gift certificates and use it by pin number. <br>
+    						Developed server-side application. <br>
+                            Backend : Java, Spring, MS-SQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="thumbnail clearfix">
+                        <div class="tb-image-container">
+                            <a class="image-link" href="assets/img/portfolio/hkfire.png">
+                               <img class="tb-img-responsive" src="assets/img/portfolio/hkfire.png" alt="Heungkuk Fire & Marine Insurance">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Heungkuk Fire&Marine Insurance ©</h4>
+                            <p>
+                            2014 1Q ~ 2015 1Q<br>
+                            Heungkuk Fire & Narine Insurance is a 7th biggest insurance company in South Korea.
+                            Maintained and managed one of the core systems, Underwriting <br>
+                            It was a first and great experience to handle enterprise system and huge database. <br>
+                            Backend : Java, Spring, Oracle
+                            Frontend : XPlatform (UI, UX platform)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="thumbnail clearfix">
+                        <div class="tb-image-container">
+                            <a id="bitcoinGallery" href="assets/img/portfolio/bitcoin/b_1.png">
+                               <img class="tb-img-responsive" src="assets/img/portfolio/bitcoin/b_1.png" alt="Bitcoin Issue">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Bitcoin Issue</h4>
+                            <p>
+                            2013 4Q<br>
+                            'Bitcoin issue' is a android application, shows shops which accepts Bitcoin for payment. <br>
+                            I led four developers. Also I developed Android(Using Google Map) and backend. <br>
+                            Backend System : PHP(native), MySQL, Linux(Raspberry PI) <br>
+                            ( prototype and not released ) <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="thumbnail clearfix">
+                        <div class="tb-image-container">
+                            <a id="hammerGallery" href="assets/img/portfolio/hammer/hammer_1.jpg">
+                               <img class="tb-img-responsive" src="assets/img/portfolio/hammer/hammer_1.jpg" alt="Concrete Calculator">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Concrete test calculator</h4>
+                            <p>
+                            2013 2Q<br>
+                            Schmidt hammer test is used to measure the elastic properties or strength of concrete or rock. <br>
+                            Calculations in the test is complex and takes more than 20 minutes. <br>
+                            As I studied both Architectural Engineering and Computer Engineering, I made this application for the calculation. <br>
+                            With this application, It can be done so easily and quickly. <br>
+    						<a href="https://play.google.com/store/apps/details?id=com.penpen.concretecalculator" target="_blank">Google play store</a>
+    						</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
-                    data-holder-rendered="true">
-            </div>
+    <!-- START THE FEATURETTES -->
+
+    <!-- <hr class="featurette-divider"> -->
+
+    <!-- <div id="experience" class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
-                    data-holder-rendered="true">
-            </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
+                data-holder-rendered="true">
         </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-
-        <!-- FOOTER -->
-        <!-- <footer>
-            <p class="pull-right"><a href="http://bootstrapk.com/examples/carousel/#">Back to top</a></p>
-            <p>© 2014 Company, Inc. · <a href="http://bootstrapk.com/examples/carousel/#">Privacy</a> · <a href="http://bootstrapk.com/examples/carousel/#">Terms</a></p>
-        </footer> -->
-        <footer class="footer">
-            <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
-            </div>
-        </footer>
-
     </div>
-    <!-- /.container -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
+                data-holder-rendered="true">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMjAzMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
+                data-holder-rendered="true">
+        </div>
+    </div>
+
+    <hr class="featurette-divider"> -->
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center tb-header-container">
+                    <h2 class="h2_title">Wanna know me more?</h2>
+                    <h2 class="h2_title">Let's keep in Touch :D</h2>
+                    <span class="tb-underline-dark"> </span>
+                    <div class="tb-social-icons">
+                        <ul class="list-inline">
+                            <li><a href="mailto:kywpcm@gmail.com" target="_top" title="Email"><i class="fa fa-envelope"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/kywpcm" title="Github"><i class="fa fa-github"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/youngwoo-max-kwon-777b92139/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li><a target="_blank" href="https://www.facebook.com/kyunghun.jeon" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                            <li><a target="_blank" href="http://blog.naver.com/kywpcm" title="Blog"><i class="fa fa-newspaper-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="list-inline">
+                        <li>Copyright &copy; 2017. Youngwoo Max Kwon all rights reserved.</li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li>
+                          <small>This homepage is running on <a target="_blank" rel="nofollow" href="https://www.raspberrypi.org/">Raspberry PI<img class="footer_img" alt="raspberryPI" src="./img/Raspberry_Pi_Logo.svg.png"/></a></small>
+                        </li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li>
+                            <small><a class="page-scroll" href="#home">Back to top<img class="footer_img" alt="back to top" src="./img/arrow-blue.png"/></a></small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -370,7 +389,14 @@
     <script src="./assets/js/smoothly-scrolling.js"></script>
     <!-- jQuery Easing plugin -->
     <script src="./assets/plugins/jquery.easing.min.js"></script>
+    <!-- magnific -->
+    <script src="./assets/plugins/magnific/jquery.magnific-popup.min.js"></script>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg></body>
+    <!-- 사용자 js -->
+    <script src="./js/index.js"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg>
+
+</body>
 
 </html>

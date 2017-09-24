@@ -1,9 +1,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
+/* Padding below the footer and lighter body text */
 body {
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   color: #5a5a5a;
 }
 
@@ -40,14 +40,28 @@ body {
 /* Carousel base class */
 .carousel {
   height: 100%;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  top: 180px;
-  text-align: left;
+  top: 23px;
+  text-align: center;
   z-index: 10;
 }
+@media (min-width: 768px) {
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      top: 255px;
+      text-align: right;
+      z-index: 10;
+    }
+}
+/* Since positioning the image, we need to help out the caption */
+/*.carousel-caption {
+  top: 0px;
+  text-align: right;
+  z-index: 10;
+}*/
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -71,9 +85,9 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
+/*.marketing h2 {
   font-weight: normal;
-}
+}*/
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
