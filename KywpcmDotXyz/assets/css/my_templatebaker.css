@@ -182,15 +182,20 @@ footer {
     margin: 20px 0 0 0;
     border: 0px solid #ddd;
     border-bottom: 1px solid #d9d9d9;
+    height: 550px;
 }
 .tb-image-container {
-    /*padding-top: 30px;*/
+    padding: 15px;
+    height: 200px;
 }
 .tb-img-responsive {
     border-radius: 4px 4px 0 0;
     display: block;
-    height: auto;
+    height: -webkit-fill-available;
     max-width: 100%;
+}
+.thumbnail a>img {
+    height: -webkit-fill-available;
 }
 .thumbnail .caption {
     padding: 30px;

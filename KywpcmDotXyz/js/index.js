@@ -9,7 +9,10 @@ $(document).ready(function() {
 	// }
 
 
-
+    commentsMIS = [ {title: 'For security reasons, data can not be shown.', sub: '© tsis'},
+    	         {title: 'For security reasons, data can not be shown.', sub: '© tsis'},
+    	         {title: 'For security reasons, data can not be shown.', sub: '© tsis'},
+    	         {title: 'For security reasons, data can not be shown.', sub: '© tsis'} ];
     $('#mis').magnificPopup({
   	    items: [
   	      {src: 'img/projects/mis/img_mis_01.png'},
@@ -20,94 +23,75 @@ $(document).ready(function() {
   	    gallery: {
   	      enabled: true
   	    },
+        image: {
+	      titleSrc: function(item) {
+              var i = item.index;
+              return commentsMIS[i].title + '<small>' + commentsMIS[i].sub + '</small>';
+          }
+	    },
   	    type: 'image' // this is default type
     });
 
-    $('#aig').magnificPopup({type:'image'});
+    commentsAIG = [ {title: 'AIG representative homepage', sub: '© American International Group'} ];
+    $('#aig').magnificPopup({
+        image: {
+          titleSrc: function(item) {
+              var i = item.index;
+              return commentsAIG[i].title + '<small>' + commentsAIG[i].sub + '</small>';
+          }
+        },
+        type:'image'
+    });
 
-
-
-  $('.image-link').magnificPopup({type:'image'});
-
-  $('#vanGallery').magnificPopup({
-	    items: [
-	      {src: 'assets/img/portfolio/vanoptics/dashboard.png'},
-	      {src: 'assets/img/portfolio/vanoptics/order.png'},
-	      {src: 'assets/img/portfolio/vanoptics/myaccount.png'},
-	      {src: 'assets/img/portfolio/vanoptics/login.png'}
-	    ],
-	    gallery: {
-	      enabled: true
+    commentsTMS = [ {title: 'TMS(Tsis Mentoring Service) for Android', sub: ''},
+    	         {title: 'TMS(Tsis Mentoring Service) for Android', sub: ''},
+    	         {title: 'TMS(Tsis Mentoring Service) for Android', sub: ''},
+    	         {title: 'TMS(Tsis Mentoring Service) for Android', sub: ''},
+                 {title: 'TMS(Tsis Mentoring Service) for Android', sub: ''} ];
+    $('#tms').magnificPopup({
+  	    items: [
+  	      {src: 'img/projects/tms/img_tms_01.png'},
+  	      {src: 'img/projects/tms/img_tms_02.png'},
+  	      {src: 'img/projects/tms/img_tms_03.png'},
+  	      {src: 'img/projects/tms/img_tms_04.png'},
+          {src: 'img/projects/tms/img_tms_05.png'}
+  	    ],
+  	    gallery: {
+  	      enabled: true
+  	    },
+        image: {
+	      titleSrc: function(item) {
+              var i = item.index;
+              return commentsTMS[i].title + '<small>' + commentsTMS[i].sub + '</small>';
+          }
 	    },
-	    type: 'image' // this is default type
-	});
+  	    type: 'image' // this is default type
+    });
 
-  $('#bnlGallery').magnificPopup({
-	    items: [
-	      {src: 'assets/img/portfolio/bnl/book_0.png'},
-	      {src: 'assets/img/portfolio/bnl/book_1.png'},
-	      {src: 'assets/img/portfolio/bnl/book_2.png'},
-	      {src: 'assets/img/portfolio/bnl/book_3.png'},
-	    ],
-	    gallery: {
-	      enabled: true
+
+    /*TODO : fast draw......*/
+
+
+    commentsWeather = [ {title: 'Weather Clock Widget', sub: '© CORE TECHNOLOGY'},
+        	         {title: 'Weather Clock Widget', sub: '© CORE TECHNOLOGY'},
+        	         {title: 'Weather Clock Widget', sub: '© CORE TECHNOLOGY'},
+        	         {title: 'Weather Clock Widget', sub: '© CORE TECHNOLOGY'} ];
+    $('#weatherClockWidget').magnificPopup({
+  	    items: [
+  	      {src: 'img/projects/weatherClockWidget/img_weatherClockWidget_01.png'},
+  	      {src: 'img/projects/weatherClockWidget/img_weatherClockWidget_02.png'},
+  	      {src: 'img/projects/weatherClockWidget/img_weatherClockWidget_03.png'},
+  	      {src: 'img/projects/weatherClockWidget/img_weatherClockWidget_04.png'}
+  	    ],
+  	    gallery: {
+  	      enabled: true
+  	    },
+        image: {
+	      titleSrc: function(item) {
+              var i = item.index;
+              return commentsWeather[i].title + '<small>' + commentsWeather[i].sub + '</small>';
+          }
 	    },
-	    type: 'image' // this is default type
-	});
-
-  $('#bitcoinGallery').magnificPopup({
-	    items: [
-	      {src: 'assets/img/portfolio/bitcoin/b_1.png'},
-	      {src: 'assets/img/portfolio/bitcoin/b_2.png'},
-	      {src: 'assets/img/portfolio/bitcoin/b_3.png'},
-	      {src: 'assets/img/portfolio/bitcoin/b_4.png'}
-	    ],
-	    gallery: {
-	      enabled: true
-	    },
-	    type: 'image' // this is default type
-	});
-
-  $('#hammerGallery').magnificPopup({
-	    items: [
-	      {src: 'assets/img/portfolio/hammer/hammer_1.jpg'},
-	      {src: 'assets/img/portfolio/hammer/hammer_2.jpg'},
-	      {src: 'assets/img/portfolio/hammer/hammer_3.jpg'}
-	    ],
-	    gallery: {
-	      enabled: true
-	    },
-	    type: 'image' // this is default type
-	});
-
-  comments = [  {title: 'Perth, WA, Australia', sub: 'photo by Seen'},
-	            {title: 'Centosa, Singapore', sub: ''},
-	            {title: 'Namboong, WA, Australia', sub: ''},
-	            {title: 'Bangkok, Thailand', sub: ''},
-	            {title: 'Agra, India', sub: 'A rainy day at Taj mahal'},
-	            {title: 'Seoul, Korea', sub: ''},
-	            {title: 'Tokyo, Japan', sub: 'Yes! I love playing piano.'} ];
-
-  $('#mypicGallery').magnificPopup({
-	    items: [
-	      {src: 'assets/img/me/me_1.jpg'},
-	      {src: 'assets/img/me/me_2.jpg'},
-	      {src: 'assets/img/me/me_3.jpg'},
-	      {src: 'assets/img/me/me_4.jpg'},
-	      {src: 'assets/img/me/me_5.jpg'},
-	      {src: 'assets/img/me/me_6.jpg'},
-	      {src: 'assets/img/me/me_7.jpg'}
-	    ],
-	    gallery: {
-	      enabled: true
-	    },
-	    image: {
-	    	titleSrc: function(item) {
-	    		var i = item.index;
-				return '@ ' + comments[i].title + '<small>' + comments[i].sub + '</small>';
-            }
-	    },
-	    type: 'image' // this is default type
-	});
-
+  	    type: 'image' // this is default type
+    });
 });
