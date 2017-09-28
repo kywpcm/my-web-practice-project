@@ -200,3 +200,15 @@ footer {
 .thumbnail .caption {
     padding: 30px;
 }
+
+
+.tb-icon-about i {
+    background: #6f9ef2;
+    font-size: 33px;
+    color: #ffffff;
+    border-radius: 50%;
+    height: 83px;
+    width: 83px;
+    text-align: center;
+    padding-top: 26px;
+}
