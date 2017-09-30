@@ -69,7 +69,28 @@ $(document).ready(function() {
     });
 
 
-    /*TODO : fast draw......*/
+    commentsFastdraw = [ {title: 'Fast draw for Android', sub: ''},
+        	         {title: 'Fast draw for Android', sub: ''},
+        	         {title: 'Fast draw for Android', sub: ''},
+        	         {title: 'Fast draw for Android', sub: ''} ];
+    $('#fastdraw').magnificPopup({
+  	    items: [
+  	      {src: 'img/projects/fastdraw/img_fastdraw_main_02.png'},
+  	      {src: 'img/projects/fastdraw/img_fastdraw_gun_1_01.png'},
+  	      {src: 'img/projects/fastdraw/img_fastdraw_gun_1_02.png'},
+  	      {src: 'img/projects/fastdraw/img_fastdraw_ceremony_01.png'}
+  	    ],
+  	    gallery: {
+  	      enabled: true
+  	    },
+        image: {
+	      titleSrc: function(item) {
+              var i = item.index;
+              return commentsFastdraw[i].title + '<small>' + commentsFastdraw[i].sub + '</small>';
+          }
+	    },
+  	    type: 'image' // this is default type
+    });
 
 
     commentsWeather = [ {title: 'Weather Clock Widget', sub: '© CORE TECHNOLOGY'},
@@ -95,3 +116,9 @@ $(document).ready(function() {
   	    type: 'image' // this is default type
     });
 });
+
+function popAlertElemText(obj) {
+
+    alert($(obj).text() + ' will be added later.');
+
+}
