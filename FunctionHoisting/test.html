@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Web Test~!</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            alert('onload');
+
+            aa();
+            bb();
+
+            /* 함수 문장 */
+            /* hoisting */
+            function aa() {
+                alert('aa');
+            };
+            /* 함수 문장의 함수 표현식화 */
+            /* hoisting 안 됨 */
+            (function bb() {
+                alert('bb');
+            });
+            /* 함수 표현식 */
+            // var bb = function bb() {
+            //     alert('bb');
+            // };
+        };
+
+        /* 함수 문장은 문법적으로 선언 동시 실행(();) 안 됨. */
+        // function bb() {
+        //     alert('bb');
+        // }();
+    </script>
+</body>
+
+</html>
