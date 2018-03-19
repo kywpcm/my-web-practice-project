@@ -14,7 +14,7 @@
 	<br>
 
 	<p>Á¦°ö Å×½ºÆ®</p>
-	<form method="post" action="/send.do">
+	<form method="post" action="/AJAX/send.do">
 		<input type="text" name="inputNum">
 		<input type="submit" value="SEND">
 	</form>
