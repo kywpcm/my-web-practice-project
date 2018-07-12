@@ -17,7 +17,7 @@
 
 		var httpRequest;
 		document.getElementById("send").onclick = function() {
-			makeRequest('http://localhost:8080/send.do');
+			makeRequest('http://localhost:8080/AJAX/send_alias.do');
 		};
 
 		function makeRequest(url) {

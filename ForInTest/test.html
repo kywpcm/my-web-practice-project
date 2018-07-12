@@ -14,7 +14,7 @@
             var ary = new Array();
             ary = [1, 3, 'kywpcm', true, '아~'];
 
-            for (var qweasd in ary) {
+            for (var qweasd in ary) { // index
                 console.log(qweasd + ' : ' + ary[qweasd]);
             }
 
@@ -23,10 +23,10 @@
                 id: 'myid',
                 name: 'myname',
                 pw : '123!@#!413'
-            }
+            };
 
-            for (var i in obj) { // attr
-                console.log(i); // attr
+            for (var prop in obj) { // attr (prop)
+                console.log(prop + ' : ' + obj[prop]);
             }
 
         }
