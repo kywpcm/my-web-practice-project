@@ -5,23 +5,38 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-@SuppressWarnings("Convert2Lambda")
+// 1. 스프링 컨테이너 annotaion 기동 방식
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {
+//        "classpath:service-servlet.xml",
+        "classpath:applicationContext.xml"
+})
+//@WebAppConfiguration // web.xml : servlet mapping, DispatcherServlet, service-servlet.xml, handlerMapping, ViewResolver, Controller
 public class UserServiceTest {
 
-    private static final int THREAD_POOL_SIZE = 10; // thread pool size
-    private static ApplicationContext container;
-    private final UserService userService = (UserService) container.getBean("userService");
+    private static final int THREAD_POOL_SIZE = 10000; // thread pool size
+
+    @Autowired
+    private UserService userService;
+//    private static ApplicationContext container;
+//    private final UserService userService = (UserService) container.getBean("userService");
 
     @BeforeClass
     public static void launchSpring() {
-        container = new ClassPathXmlApplicationContext("applicationContext.xml");
+        // 2. 스프링 컨테이너 클래스 기동 방식
+//        String[] inputXMLs = {"applicationContext.xml"};
+//        container = new ClassPathXmlApplicationContext(inputXMLs);
     }
 
     @Before
