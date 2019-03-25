@@ -9,16 +9,16 @@
 <html>
 <head></head>
 <body>
-[1] 현재 페이지의 세션 ID 입니다. : [ <%= session.getId() %> ]
-<br><hr><br>
-[2] 세션 값이 저장되어 있는지 체크합니다. : [ <%= session.getAttribute("value") %> ]
-<br><hr><br>
+[1] 현재 페이지의 세션 ID 입니다. : [ <%= session.getId() %> ]<br>
+<hr>
+[2] 세션 값이 저장되어 있는지 체크합니다. : [ <%= session.getAttribute("value") %> ]<br>
+<hr>
 [3] 이번엔 세션 ID가 쿠키로 왔는지 URL로 왔는지 체크합니다.
 <br><br>
 <%
     if (request.isRequestedSessionIdValid())
         out.println("세션 ID가 쿠키에 실려왔습니다.");
 %>
-<br><hr><br>
+<hr>
 </body>
 </html>
