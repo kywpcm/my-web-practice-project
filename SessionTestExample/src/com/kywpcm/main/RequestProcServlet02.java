@@ -1,12 +1,13 @@
 package com.kywpcm.main;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
-import java.io.PrintWriter;
 
-@javax.servlet.annotation.WebServlet(name = "RequestProcServlet02")
+@WebServlet(name = "RequestProcServlet02", urlPatterns = "/RequestProcServlet02")
 public class RequestProcServlet02 extends javax.servlet.http.HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException {
