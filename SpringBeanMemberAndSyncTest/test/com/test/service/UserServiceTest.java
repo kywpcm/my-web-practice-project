@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 //@WebAppConfiguration // web.xml : servlet mapping, DispatcherServlet, service-servlet.xml, handlerMapping, ViewResolver, Controller
 public class UserServiceTest {
 
-    private static final int THREAD_POOL_SIZE = 10000; // thread pool size
+    private static final int THREAD_POOL_SIZE = 10; // thread pool size
 
     @Autowired
     private UserService userService;
@@ -53,18 +53,18 @@ public class UserServiceTest {
     public void testCreateUserMultiThread() {
         ExecutorService es = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
 
-        for (int i = 0; i < THREAD_POOL_SIZE; i++) {
-            int finalI = i;
+        for (int i = 0; i < 1000; i++) {
             // 1 request
             es.execute(new Runnable() {
                 @Override
                 public void run() {
-                    // user 생성후, 해당 user를 바로 가져오고 싶은 경우
-                    // userService lock을 걸어 sync를 맞춘다.
-                    synchronized (userService) {
-                        userService.createUser(Thread.currentThread().toString(), "User" + (finalI + 1));
-                        System.out.println(Thread.currentThread() + " ##### get user " + userService.getUser().getId());
-                    }
+                    // case 1: user 생성후, 해당 user를 바로 가져오고 싶은 경우
+                    // 오직 하나의 스레드만이 pass 할 수 있게 클래스 원형 오브젝트로 lock을 건다.
+                    // multi thread 환경에서 sync를 보장받고 싶은 부분이 있을 때
+//                    synchronized (Runnable.class) {
+                        userService.createUser(Thread.currentThread().toString(), "User[" + Thread.currentThread().getName() + "]");
+                        System.out.println(Thread.currentThread() + " ##### get user name : " + userService.getUser().getName());
+//                    }
                 }
             });
         }

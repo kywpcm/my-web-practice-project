@@ -17,8 +17,9 @@ public class UserService {
     public static final List<User> USER_LIST = new ArrayList<>();
 
     public void createUser(String id, String name) {
-        // user 생성 후, DB에 저장하는 트랜잭션에서
+        // case 2 : user 생성 후, DB에 저장하는 트랜잭션에서
         // 멤버 변수인 user에 대해 thread safety를 보장 받으려면 적절한 sync 처리 등의 방법을 이용
+        // 인스턴스 당 하나의 스레드만 pass 시키는 this lock을 건다. 해당 클래스는 어차피 싱글톤
         synchronized (this) {
             user = new User();
 
